@@ -1,3 +1,7 @@
+
+def multiply(a, b):
+    return a * b
+
 def main() :
     print("Calculator")
     print("1. Add")
@@ -12,7 +16,9 @@ def main() :
     elif choice == '2':
         print("Invalid choice. Please select a valid operation.")
     elif choice == '3':
-        print("Invalid choice. Please select a valid operation.")
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+        print(f"The result is: {multiply(num1, num2)}")
     elif choice == '4':
         print("Invalid choice. Please select a valid operation.")
     elif choice == '5':
