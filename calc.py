@@ -1,8 +1,16 @@
-def add(a, b):
+def your_add(a, b):
     return a + b
 
 def subtract(a, b):
     return a - b
+
+def multiply(a, b):
+    return a * b
+  
+def divide(a, b):
+    if b == 0:
+        return "Error: Cannot divide by zero"
+    return a / b
 
 def main() :
     print("Calculator")
@@ -14,13 +22,21 @@ def main() :
     choice = input("Choose an operation (1/2/3/4/5): ")
 
     if choice == '1':
-       print(f"Adding 1 + 2 = {add(1,2)}")
+       num1 = float(input("Enter first number: "))
+       num2 = float(input("Enter second number: "))
+       print(f"The result is: {your_add(num1, num2)}")
     elif choice == '2':
-        print(f"Subtracting 7 - 3 = {subtract(7,3)}")
+       num1 = float(input("Enter first number: "))
+       num2 = float(input("Enter second number: "))
+       print(f"The result is: {subtract(num1, num2)}")
     elif choice == '3':
-        print("Invalid choice. Please select a valid operation.")
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+        print(f"The result is: {multiply(num1, num2)}")
     elif choice == '4':
-        print("Invalid choice. Please select a valid operation.")
+       num1 = float(input("Enter first number: "))
+       num2 = float(input("Enter second number: "))
+       print(f"The result is: {divide(num1, num2)}")
     elif choice == '5':
         print("Exiting the calculator. Goodbye!")
     else:
