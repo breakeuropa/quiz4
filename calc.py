@@ -1,3 +1,9 @@
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
 def main() :
     print("Calculator")
     print("1. Add")
@@ -8,9 +14,9 @@ def main() :
     choice = input("Choose an operation (1/2/3/4/5): ")
 
     if choice == '1':
-       print("Invalid choice. Please select a valid operation.")
+       print(f"Adding 1 + 2 = {add(1,2)}")
     elif choice == '2':
-        print("Invalid choice. Please select a valid operation.")
+        print(f"Subtracting 7 - 3 = {subtract(7,3)}")
     elif choice == '3':
         print("Invalid choice. Please select a valid operation.")
     elif choice == '4':
