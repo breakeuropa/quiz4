@@ -1,4 +1,4 @@
-def my_add(a, b):
+def your_add(a, b):
     return a + b
 
 def subtract(a, b):
@@ -24,7 +24,7 @@ def main() :
     if choice == '1':
        num1 = float(input("Enter first number: "))
        num2 = float(input("Enter second number: "))
-       print(f"The result is: {my_add(num1, num2)}")
+       print(f"The result is: {your_add(num1, num2)}")
     elif choice == '2':
        num1 = float(input("Enter first number: "))
        num2 = float(input("Enter second number: "))
